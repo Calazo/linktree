@@ -1,0 +1,107 @@
+body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    /* min-height: 100vh;  */
+    /* evita corte do conteúdo quando a altura for maior que a tela. */
+    overflow-x: hidden;
+    /* previne barras horizontais se algo “estourar”. */
+}
+
+.container {
+    background-color: #ff0000;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    max-width: 80%;
+    margin: 10px auto;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+
+}
+.container h2 {
+    margin: 10px;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ad2c2c;
+    box-shadow: 0px 4px 20px rgba(102, 7, 7, 0.7);
+}
+
+.sub-title {
+    margin-bottom: 40px;
+}
+
+.contato {
+    background-color:#ad2c2c;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px;
+}
+
+.endereco {
+    background-color: #ad2c2c;
+    border-radius: 10px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #9b4c4c;
+    border-radius: 5px;
+    color: #fff;
+    min-height: 60px;
+    box-shadow: 0px 4px 20px rgba(66, 62, 62, 0.6);
+    transition: transform 0.2s, background-color 0.2s ;
+}
+.link h3, .link p, .link address {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+.link h3 {
+    font-weight: bold;
+}
+.link address {
+    font-style: normal;
+}
+.endereco-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    justify-content: center;
+    
+}
+.endereco-titulo h2 {
+    margin: 10px;
+}
+.site p{
+    text-decoration: none;
+}
+
+.link:hover {
+    background: #be1a1a;
+    transform: scale(1.03); 
+        /*aumentaa lemente o botao */
+}
+.link:active {
+    transform: scale(0.98);
+        /* pequeno efeito de clique */
+}
